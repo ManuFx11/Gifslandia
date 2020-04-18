@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
 
-function App() {
+//Components
+import Buscador from './components/buscador';
+import ListGif from './components/list-gifs';
+
+function App(){
+
+  //Declaro los estados que enviare por props a ListGif, no se declara alli ya que Buscador tambien los usara
+   const [gifs, setGifs] = useState([]);
+   const [busqueda, setBusqueda] = useState("panda");
+
+   function grabarDato(e){
+      setBusqueda(e.target.value);
+   }
+   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="App-header">
+        <ListGif busqueda={busqueda} gifs={gifs} setGifs={setGifs}/>
+        <Buscador grabarDato={grabarDato}/>
+      </section>
+       
     </div>
   );
 }

@@ -1,0 +1,8 @@
+Creación de un buscador de Gif con la plataforma de GIPHY
+
+1) Instalación de entorno de proyecto con Create-React-App
+2) Obtener para realizar peticiones api una api-key del servicio GIPHY: THu9vMb3Ry5XxLjFC5LMU3PUMWsXv5gL
+3) Instalación de Extensión Error Lens que muestra los errores donde estan
+4) Instalación de Wouter que es una pequeña libreria sin dependencias que actua como un react-router. Y no necesita que se englobe la 
+aplicación. 
+5) 
