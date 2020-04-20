@@ -5,4 +5,4 @@ Creación de un buscador de Gif con la plataforma de GIPHY
 3) Instalación de Extensión Error Lens que muestra los errores donde estan
 4) Instalación de Wouter que es una pequeña libreria sin dependencias que actua como un react-router. Y no necesita que se englobe la 
 aplicación. 
-5) 
+5) Instalación de Styled-Component.

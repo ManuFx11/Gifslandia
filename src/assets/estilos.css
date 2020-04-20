@@ -1,0 +1,117 @@
+/* Estilos de Aplicación */
+*{font-family:'Dosis'; margin:0; padding:0;}
+body{height:auto; overflow:hidden;}
+ul > li{list-style:none; margin:20px auto;}
+/* Header */
+header{
+    position:fixed;
+    width:100%;
+}
+header > div.contenido-cabecera{
+    display:flex;
+    flex-direction:row;
+    max-width:1800px;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+}
+header > div.contenido-cabecera > nav#menu-principal > ul{
+    display:flex;
+    flex-direction:row;
+    list-style-type:none;
+}
+header > div.contenido-cabecera > nav#menu-principal > ul > li{
+    margin:0px 25px;
+    display:block;
+}
+header > div.contenido-cabecera > nav#menu-principal > ul > li > a{
+    text-decoration:none;
+    font-size:24px;
+    color:#FFF;
+    letter-spacing:1px;
+    font-weight:700;
+    cursor:pointer;
+    transition:ease-in 0.4s all;
+}
+header > div.contenido-cabecera > nav#menu-principal > ul > li > a:hover{
+    color:#FFF;
+    border-bottom:3px dotted white;
+}
+
+/* Contenido Texto */
+div.contenido-texto{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:block;
+    padding:10px 20px;
+    font-family:'Dosis';
+}
+div.contenido-texto > h1{
+    font-size:45px;
+    margin:35px 0px;
+}
+div.contenido-texto > h1 > small{
+    font-size:35px;
+}
+div.contenido-texto > a{
+    background-color:#84A5C5;
+    padding:10px 30px;
+    border-radius:5px;
+    text-decoration:none;
+    color:#2c2c2c;
+    font-weight:bold;
+    margin:40px auto;
+    width:250px;
+    display:block;
+}
+
+/* Home */
+div.ancho-limitado-90{
+    max-width:1800px;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+}
+div.ancho-limitado-90 > div.home-title{
+    flex-basis:30%;
+}
+div.ancho-limitado-90 > div.description-home{
+    flex-basis:40%;
+}
+div.description-home{
+    align-self: center;
+    background:rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:10px;
+}
+div.description-home > h2{
+    font-size:70px;
+    letter-spacing:2px;
+    margin:20px 0px;
+    color:white;
+}
+div.description-home > p{
+    font-size:20px;
+    font-weight:300;
+    margin:15px 0px;
+    color:#FFF;
+    font-weight:500;
+    font-family:'Dosis';
+}
+div.home-title > h2{
+    font-size:120px;
+    letter-spacing:2px;
+    color:black;
+}
+div.home-title > p{
+    font-size:25px;
+}
+div.home-title > p:last-child{
+    margin:30px 0px;
+}
+
+div.home-title > div.imagen-foto > img{
+    border-radius:50%;
+}

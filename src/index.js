@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//Uso WebFontLoader
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Dosis','Righteous']
+  }
+})
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
